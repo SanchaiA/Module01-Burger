@@ -171,7 +171,7 @@ header {
   bottom: 3px;
 }
 .banner-text {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   line-height: 24px;
   position: absolute;
@@ -179,7 +179,7 @@ header {
 }
 .banner-link {
   position: absolute;
-  font-family: Nunito Sans;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 60px;
