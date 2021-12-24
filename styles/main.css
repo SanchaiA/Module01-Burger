@@ -29,9 +29,7 @@ header {
 .header-nav {
   list-style-type: none;
   display: flex;
-  padding-top: px;
   padding-left: 0;
-  margin-left: -100px;
   padding-right: 0px;
   gap: 46px;
 }
@@ -174,11 +172,10 @@ header {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   line-height: 24px;
-  position: absolute;
-  margin-top: 115px;
+  margin-top: 0;
+  margin-bottom: 35px;
 }
 .banner-link {
-  position: absolute;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
