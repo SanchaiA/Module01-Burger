@@ -15,7 +15,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 26px;
+  padding-top: 30px;
   padding-bottom: 25px;
 }
 .header-logo {
@@ -30,7 +30,6 @@ header {
   list-style-type: none;
   display: flex;
   padding-left: 0;
-  padding-right: 0px;
   gap: 46px;
 }
 .header-nav a {
@@ -90,15 +89,16 @@ header {
   background-image: url(../images/bg.jpg);
   background-size: cover;
   background-position: center center;
-  padding: 140px 0;
+  padding: 142px 0;
   margin-bottom: 140px;
 }
 .breadcrumbs {
-  padding-left: 03px;
+  padding-left: 0;
+  margin-top: 0;
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 9px;
+  gap: 7px;
 }
 .breadcrumbs a {
   font-family: "Open Sans", sans-serif;
@@ -112,7 +112,7 @@ header {
 .breadcrumbs a::before {
   content: "/";
   position: relative;
-  left: -4px;
+  left: -3px;
   pointer-events: none;
 }
 .breadcrumbs a:hover::before {
@@ -122,67 +122,156 @@ header {
   display: none;
 }
 .title {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 79px;
-  margin-top: 22px;
+  margin-top: 17px;
   margin-bottom: 22px;
 }
 .description {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  line-height: 24px;
+  line-height: 1.6;
   color: #faf9f9;
   max-width: 320px;
-  margin: -3px auto;
+  margin: 0 auto;
 }
 .banner-box {
   background-image: url(../images/banner-bg.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 104px 907px 230px 100px;
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
+  padding: 98px 101px 120px;
+  margin-bottom: 104px;
 }
 .banner-title {
-  display: flex;
-  flex-direction: column;
-  font-family: "Nunito Sans", sans-serif;
+  font-size: 60px;
   font-weight: 900;
   color: #ffffff;
-  text-transform: uppercase;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 14px;
 }
 .banner-title span {
+  display: block;
   font-family: "Open Sans" sans-serif;
-  font-weight: 600;
   font-size: 14px;
-  line-height: 28px;
-  text-align: center;
-  background: #f37335;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #f37335;
   border-radius: 14px;
-  width: 95px;
-  height: 28px;
-  bottom: 3px;
+  padding: 6px 0px;
+  max-width: 95px;
+  text-align: center;
+  margin-bottom: 6px;
 }
 .banner-text {
+  color: #faf9f9;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
+  line-height: 1.6;
+  max-width: 353px;
   margin-top: 0;
   margin-bottom: 35px;
 }
 .banner-link {
-  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  line-height: 60px;
+  padding: 19px 25px;
   color: #1e2f40;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  background: #ffc725;
-  width: 170px;
-  height: 58px;
+  background-color: #ffc725;
   border-radius: 5px;
-  margin-top: 177px;
+}
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #1b2a49;
+  text-transform: uppercase;
+  margin: 0;
+}
+.menu-select {
+  border: 1px solid #dedede;
+  padding: 13px 30px;
+  border-radius: 22px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #443737;
+  appearance: none;
+  flex-basis: 279px;
+  background-image: url(../images/arrow.svg);
+  background-size: 12.79px 7.75px;
+  background-repeat: no-repeat;
+  background-position: 90% center;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 20px;
+  text-align: center;
+  margin-top: 38px;
+  margin-bottom: 100px;
+  margin-left: 3px;
+}
+.menu-grid-cover {
+  width: 100%;
+  height: 430px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 23px;
+}
+.menu-grid-cover img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  width: 100%;
+  height: 430px;
+}
+.menu-grid-title {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  color: #1b2a49;
+  margin: 0;
+}
+.menu-grid-price {
+  font-size: 20px;
+  text-align: center;
+  color: #979797;
+  margin-top: 9px;
+  margin-bottom: 23px;
+}
+.menu-grid-btn {
+  display: flex;
+  background: #fbb731;
+  border-radius: 5px;
+  padding: 10px 32px;
+  border-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 10px;
+}
+.menu-grid-icon {
+  background-image: url(../images/cart-menu.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+.menu-grid-text {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1e2f40;
 }
