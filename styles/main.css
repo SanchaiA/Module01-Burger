@@ -18,6 +18,12 @@ header {
   padding-top: 30px;
   padding-bottom: 25px;
 }
+.header-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 68.5%;
+}
 .header-logo {
   display: block;
   background-image: url(../images/logo.svg);
@@ -176,13 +182,18 @@ header {
 .banner-link {
   font-weight: 700;
   font-size: 14px;
-  padding: 19px 25px;
+  padding: 18px 25px;
   color: #1e2f40;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  background-color: #ffc725;
+  background-color: #fbb731;
   border-radius: 5px;
+  border: 1px solid #fbb731;
+}
+.banner-link:hover {
+  background-color: transparent;
+  color: #fbb731;
 }
 .menu-header {
   display: flex;
@@ -217,7 +228,6 @@ header {
   text-align: center;
   margin-top: 38px;
   margin-bottom: 100px;
-  margin-left: 3px;
 }
 .menu-grid-cover {
   width: 100%;
@@ -259,6 +269,10 @@ header {
   justify-content: center;
   margin: 0 auto;
   gap: 10px;
+  cursor: pointer;
+}
+.menu-grid-btn:hover {
+  background-color: #f37335;
 }
 .menu-grid-icon {
   background-image: url(../images/cart-menu.svg);
@@ -274,4 +288,70 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: #1e2f40;
+}
+.footer {
+  font-family: "Open Sans", sans-serif;
+  background: #1e2f40;
+  color: #fff;
+  padding-top: 117px;
+  padding-bottom: 106px;
+  margin-top: 144px;
+}
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo {
+  width: 63px;
+  height: 56px;
+}
+.footer-item {
+  flex: 0 0 auto;
+}
+.footer-item h2 {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+  margin-top: 0;
+}
+.footer-list li {
+  margin-bottom: 9px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: #faf9f9;
+  font-weight: 700;
+  line-height: 24px;
+}
+.footer-list a {
+  color: #dedede;
+  text-decoration: none;
+  font-weight: 400;
+}
+.footer-list a:hover {
+  color: #fbb731;
+}
+.footer-item span {
+  color: #dedede;
+  display: block;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+.footer-list-tel {
+  margin-top: 0;
+}
+.footer-list-tel li {
+  margin-bottom: 12px;
+}
+.footer-list-tel a {
+  font-size: 20px;
+  color: #fbb731;
+  font-weight: 800;
+}
+.footer-list-tel a:hover {
+  color: #dedede;
+}
+.footer-list {
+  padding-left: 0;
+  list-style-type: none;
 }
