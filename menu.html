@@ -14,15 +14,15 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <header>
+  <header id="headerTop">
     <div class="container">
       <div class="header">
         <div class="header-item">
-          <a href="#" class="header-logo"></a>
+          <a href="index.html" class="header-logo"></a>
           <nav>
             <ul class="header-nav">
-              <li><a href="#" class="active">Главная</a></li>
-              <li><a href="#">Меню</a></li>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#" class="active">Меню</a></li>
               <li><a href="#">О нас</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
@@ -41,7 +41,7 @@
   <div class="bg">
     <div class="container">
       <ul class="breadcrumbs">
-        <li><a href="#">Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li><a href="#">Меню</a></li>
       </ul>
       <h1 class="title">Наше Меню</h1>
@@ -52,19 +52,19 @@
     <div class="banner">
         <div class="container">
           <div class="banner-box">
-            <h2 class='banner-title'>
+            <h2 class="banner-title">
               <span>скидка</span>
               -30%
             </h2>
             <p class="banner-text">
               Только при покупке 3-х и более позиций, мы&nbsp;дарим скидку. Акции не&nbsp;суммируются.
             </p>
-            <a href="#" class="banner-link">купить сейчас</a>
+            <a href="#menuBurger" class="banner-link">купить сейчас</a>
           </div>
         </div>
     </div>
     <section>
-      <div class="menu">
+      <div class="menu" id="menuBurger">
         <div class="container">
           <div class="menu-header">
             <h2 class="menu-title">
@@ -188,7 +188,7 @@
       </div>
     </section>
   </main>
-     <div class="footer">
+     <footer class="footer">
         <div class="container">
           <div class="footer-box">
             <div class="footer-item">
@@ -197,10 +197,10 @@
             <div class="footer-item">
               <h2>основные ссылки</h2>
               <ul class="footer-list">
-                <li><a href="">Меню</a></li>
-                <li><a href="">Заказ и Доставка</a></li>
-                <li><a href="">Методы оплаты</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="#">Заказ и Доставка</a></li>
+                <li><a href="#">Методы оплаты</a></li>
+                <li><a href="#">Контакты</a></li>
               </ul>
             </div>
             <div class="footer-item">
@@ -228,6 +228,49 @@
             </div>
           </div>
         </div>
-    </div>
+     </footer>
+     <a href="#headerTop" class="button-up hidden"  id="btnUp">Наверх</a>
+     <script>
+       // Smooth Scroll
+       const links = document.querySelectorAll(".banner-link");
+
+        for (const link of links) {
+          link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+          e.preventDefault();
+          const href = this.getAttribute("href");
+
+          document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+          });
+
+       // Button Up
+       window.onscroll = function () { scrollFunction() };
+
+       const upbuttons = document.querySelectorAll(".button-up");
+
+         for (const upbutton of upbuttons) {
+            upbutton.addEventListener("click", clickHandler);
+          }
+
+         function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+           document.querySelector(href).scrollIntoView({
+              behavior: "smooth"
+            });
+          }
+
+         function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+              document.getElementById("btnUp").className = "button-up visible";
+            } else {
+              document.getElementById("btnUp").className = "button-up hidden";
+            }
+          }
+     </script>
 </body>
 </html>
