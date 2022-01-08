@@ -10,13 +10,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
   <header id="headerTop">
     <div class="container">
       <div class="header">
+        <div class="header-burger">
+            <button class="burger" onclick="openModal()"></button>
+        </div>
         <div class="header-item">
           <a href="index.html" class="header-logo"></a>
           <nav>
@@ -63,8 +66,7 @@
           </div>
         </div>
     </div>
-    <section>
-      <div class="menu" id="menuBurger">
+    <section class="menu" id="menuBurger">
         <div class="container">
           <div class="menu-header">
             <h2 class="menu-title">
@@ -144,6 +146,10 @@
               </button>
             </div>
           </div>
+        </div>
+    </section>
+    <section class="menu menu-other">
+      <div class="container">
           <div class="menu-header">
             <h2 class="menu-title">
               Дополнительно
@@ -184,7 +190,6 @@
               </button>
             </div>
           </div>
-        </div>
       </div>
     </section>
   </main>
@@ -201,6 +206,13 @@
                 <li><a href="#">Заказ и Доставка</a></li>
                 <li><a href="#">Методы оплаты</a></li>
                 <li><a href="#">Контакты</a></li>
+              </ul>
+              <ul class="footer-list footer-list-tel">
+                <li>
+                  <a href="tel:+7900781313">+ 7 900 787 13-13</a>
+                </li>
+                <li><a href="+79007001414">+ 7 900 700 14-14</a>
+                </li>
               </ul>
             </div>
             <div class="footer-item">
@@ -230,6 +242,15 @@
         </div>
      </footer>
      <a href="#headerTop" class="button-up hidden"  id="btnUp">Наверх</a>
+     <div id="modal" class="modal">
+        <ul class="header-nav">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#" class="active">Меню</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <button class="burger-close" onclick="closeModal()"></button>
+     </div>
      <script>
        // Smooth Scroll
        const links = document.querySelectorAll(".banner-link");
@@ -245,6 +266,7 @@
           document.querySelector(href).scrollIntoView({
             behavior: "smooth"
           });
+        }
 
        // Button Up
        window.onscroll = function () { scrollFunction() };
@@ -267,10 +289,20 @@
          function scrollFunction() {
             if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
               document.getElementById("btnUp").className = "button-up visible";
-            } else {
+            } 
+            else {
               document.getElementById("btnUp").className = "button-up hidden";
             }
           }
+       // Menu
+
+           function openModal() {
+             document.getElementById("modal").style.top = "0px";
+           }
+
+           function closeModal() {
+             document.getElementById("modal").style.top = "-400px";
+           }
      </script>
 </body>
 </html>
