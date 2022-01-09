@@ -732,6 +732,7 @@ header {
     width: 116px;
     height: 37px;
     padding-bottom: 19px;
+    margin-top: 15px;
   }
   .title {
     font-weight: 700;
