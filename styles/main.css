@@ -655,7 +655,6 @@ header {
   .visual-bg {
     position: absolute;
     width: 196px;
-    
   }
   .main img {
     width: 829px;
@@ -890,9 +889,10 @@ header {
     flex-direction: column;
     height: 550px;
     gap: 15px;
-  } л
+  }
   .visual-bg {
-    display: none; 
+    display: none;
+  }
 }
 @media (max-width: 320px) {
   .banner-box {
