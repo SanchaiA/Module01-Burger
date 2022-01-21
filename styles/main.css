@@ -862,12 +862,12 @@ header {
   .main img {
     width: 298px;
     height: 297.07px;
-    top: -361px;
+    top: -61px;
     right: -81px;
   }
   .content {
-    margin-top: 42px;
-    padding-top: 0;
+    margin-top: 0;
+    padding-top: 30px;
     padding-bottom: 61px;
     flex: 0 0 550px;
   }
