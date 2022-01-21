@@ -594,9 +594,13 @@ header {
     background-position: -80px center;
     padding: 100px 40px 120px;
   }
+  .menu {
+    padding-top: 20px;
+  }
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 50px 15px;
+    margin-bottom: 84px;
   }
   .menu-other {
     overflow: hidden;
@@ -625,7 +629,6 @@ header {
   .footer {
     padding-top: 62px;
     padding-bottom: 106px;
-    margin-top: 141px;
   }
   .content {
     margin-top: 42px;
@@ -677,7 +680,6 @@ header {
   .footer-tel {
     grid-area: tel;
     text-align: right;
-    padding-right: 15px;
   }
   .footer-list .footer-list-tel {
     display: block;
@@ -733,7 +735,7 @@ header {
     font-size: 12px;
   }
   .bg {
-    padding: 55px 0;
+    padding: 52px 0;
     margin-bottom: 30px;
   }
   .banner-box {
@@ -761,7 +763,7 @@ header {
   }
   .menu-grid-cover {
     height: 53vw;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   }
   .menu-grid-cover img {
     height: 100%;
@@ -778,25 +780,24 @@ header {
   }
   .menu-other {
     height: 104vw;
-    padding-top: 29px;
+    padding-top: 30px;
   }
   .menu-other .menu-grid {
     padding-bottom: 24vw;
-    gap: 7px;
+    gap: 9px;
   }
   .menu-other .menu-grid-cover {
     height: 54vw;
     width: 40vw;
   }
   .menu-other .menu-grid-cover img {
-    height: 100%;
+    height: 96%;
   }
   .menu-other .menu-grid-item {
     flex: 0 0 38vw;
   }
   .footer {
-    margin-top: 0;
-    padding-top: 60px;
+    margin-top: 54px;
     padding-bottom: 60px;
   }
   .footer-list + .footer-list-tel {
@@ -804,27 +805,25 @@ header {
   }
   .footer-tel {
     display: block;
+    padding-right: 20px;
   }
   .footer-box {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-areas: "logo tel" "link link" "info info";
-    gap: 0;
+    gap: 1;
   }
   .footer-item:nth-child(1) {
     grid-area: logo;
   }
   .footer-item:nth-child(2) {
     grid-area: link;
-    margin-top: 21px;
   }
   .footer-item:nth-child(3) {
     grid-area: info;
-    margin-top: 17px;
   }
   .footer-tel {
     grid-area: tel;
-    padding-left: 26px;
   }
   .main img {
     width: 298px;
