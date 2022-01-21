@@ -401,7 +401,7 @@ header {
   flex: 0 0 580px;
   padding-top: 170px;
   padding-bottom: 170px;
-  margin-left: 40px;
+  margin-left: 12px;
 }
 .content-title {
   font-size: 120px;
@@ -652,15 +652,15 @@ header {
   }
   .visual-bg {
     position: absolute;
-    width: 125px;
+    width: 199px;
   }
   .main img {
     width: 829px;
     right: -137px;
     width: 496px;
     height: 516px;
-    top: 200px;
-    height: 94%;
+    top: 213px;
+    height: 77%;
     object-fit: cover;
     object-position: 0 0;
   }
@@ -674,10 +674,6 @@ header {
   }
   .footer-list .footer-list-tel {
     display: block;
-  }
-  .wrapper {
-    padding-top: 30px;
-    padding-left: 30px;
   }
 }
 @media (max-width: 980px) {
@@ -704,8 +700,8 @@ header {
     display: none;
   }
   .content {
-    padding-top: 110px;
-    padding-bottom: 140px;
+    padding-top: 136px;
+    padding-bottom: 124px;
   }
 }
 @media (max-width: 567px) {
