@@ -657,7 +657,7 @@ header {
   }
   .visual-bg {
     position: absolute;
-    width: 196px;
+    width: 170px;
   }
   .main img {
     width: 829px;
@@ -821,17 +821,21 @@ header {
     grid-area: tel;
   }
   .main img {
-    width: 298px;
+    width: 300px;
     height: 297.07px;
-    top: -361px;
+    top: -215px;
     right: -81px;
   }
   .wrapper {
+    padding-top: 30px;
     flex-direction: column;
     display: block;
   }
   .promo-left {
     margin-bottom: 40px;
+  }
+  .content {
+    margin-top: 0;
   }
 }
 @media (max-width: 360px) {
