@@ -657,14 +657,14 @@ header {
   }
   .visual-bg {
     position: absolute;
-    width: 170px;
+    width: 155px;
   }
   .main img {
     width: 829px;
     right: -137px;
     width: 496px;
     height: 516px;
-    top: 116px;
+    top: 200px;
     height: 94%;
     object-fit: cover;
     object-position: 0 0;
