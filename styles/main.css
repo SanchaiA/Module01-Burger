@@ -401,6 +401,7 @@ header {
   flex: 0 0 580px;
   padding-top: 170px;
   padding-bottom: 170px;
+  margin-left: 40px;
 }
 .content-title {
   font-size: 120px;
@@ -630,12 +631,6 @@ header {
     padding-top: 62px;
     padding-bottom: 106px;
   }
-  .content {
-    margin-top: 42px;
-    padding-top: 0;
-    padding-bottom: 123px;
-    padding-left: 13px;
-  }
   .content-title span {
     font-size: 22px;
     line-height: 27px;
@@ -824,6 +819,10 @@ header {
   .footer-tel {
     grid-area: tel;
   }
+  .content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .main img {
     width: 300px;
     height: 297.07px;
@@ -838,12 +837,6 @@ header {
   }
   .promo-left {
     margin-bottom: 40px;
-  }
-  .content {
-    margin-top: 0;
-  }
-  .content-title {
-    font-size: 70px;
   }
 }
 @media (max-width: 360px) {
