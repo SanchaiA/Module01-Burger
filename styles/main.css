@@ -817,7 +817,6 @@ header {
   .content {
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 14px;
   }
   .content-title {
     font-size: 70px;
@@ -878,13 +877,15 @@ header {
   }
   .promo {
     width: 100%;
+    padding-top: 0;
   }
   .promo-left {
     margin-bottom: 22px;
   }
   .wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
     flex-direction: column;
     height: 550px;
     gap: 15px;
