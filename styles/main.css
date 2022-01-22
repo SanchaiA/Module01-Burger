@@ -401,10 +401,9 @@ header {
   flex: 0 0 580px;
   padding-top: 170px;
   padding-bottom: 170px;
-  margin-left: 12px;
 }
 .content-title {
-  font-size: 120px;
+  font-size: 86px;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 120px;
@@ -431,7 +430,7 @@ header {
   background-color: #fbb731;
   border-radius: 5px;
   text-decoration: none;
-  padding: 20px 45px;
+  padding: 17px 38px;
   display: inline-block;
   text-transform: uppercase;
   font-size: 14px;
@@ -488,7 +487,7 @@ header {
   display: inline-block;
   text-transform: uppercase;
   margin-bottom: 3px;
-  margin-top: 0;
+  margin-top: -3px;
 }
 .cost {
   font-size: 60px;
@@ -508,13 +507,13 @@ header {
 }
 .promo-right .promo-description {
   max-width: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .free {
   font-size: 44px;
   font-weight: 700;
   margin-bottom: 10px;
-  margin-top: 0;
+  margin-top: 13px;
 }
 
 /* Modal */
@@ -818,16 +817,21 @@ header {
   .content {
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 14px;
+  }
+  .content-title {
+    font-size: 70px;
   }
   .main img {
     width: 300px;
     height: 297.07px;
-    top: -215px;
+    top: -195px;
     right: -81px;
   }
   .wrapper {
     padding-top: 30px;
-    padding-left: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
     flex-direction: column;
     display: block;
   }
