@@ -893,6 +893,9 @@ header {
   .visual-bg {
     display: none;
   }
+  .main {
+    width: 100%;
+  }
 }
 @media (max-width: 320px) {
   .banner-box {
