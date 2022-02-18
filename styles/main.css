@@ -901,4 +901,6 @@ header {
   .banner-box {
     background-position: 25% center;
   }
+  .footer-list-tel a {
+    font-size: 18px;
 }
